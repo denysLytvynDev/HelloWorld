@@ -23,31 +23,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cu-ZT-NWf">
-                                <rect key="frame" x="128.5" y="766" width="157" height="50"/>
+                                <rect key="frame" x="82" y="760" width="250" height="50"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="3Go-Zi-WAd"/>
+                                    <constraint firstAttribute="height" constant="50" id="8gs-jG-uKm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="UKe-bm-gTE"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Text">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2o-QM-2Qj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Cu-ZT-NWf" secondAttribute="bottom" constant="46" id="0sB-YF-i15"/>
                             <constraint firstItem="b6C-00-cTk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="Ebu-VT-QvO"/>
-                            <constraint firstItem="4Cu-ZT-NWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9U-tq-cak"/>
+                            <constraint firstItem="4Cu-ZT-NWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hso-q4-S1b"/>
                             <constraint firstItem="b6C-00-cTk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vta-wH-8Fl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Cu-ZT-NWf" secondAttribute="bottom" constant="52" id="w3p-Kd-SSm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="b6C-00-cTk" id="xet-W3-MHb"/>
+                        <outlet property="toggleButton" destination="4Cu-ZT-NWf" id="Iu7-5e-0IR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="69"/>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
         </scene>
     </scenes>
     <resources>
